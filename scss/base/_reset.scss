@@ -19,10 +19,6 @@ body {
 	font-family: $main-font-family;
 }
 
-main {
-	flex-grow: 1;
-}
-
 img {
 	display: flex;
 	height: auto;
@@ -55,4 +51,8 @@ a:active {
 	padding-right: 45px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.main {
+	flex-grow: 1;
 }
