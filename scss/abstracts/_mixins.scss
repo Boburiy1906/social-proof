@@ -1,0 +1,37 @@
+// SCSS Mixins
+
+// Fonts
+@mixin font($size, $line, $weight, $color) {
+  font-size: $size;
+  line-height: $line;
+  font-weight: $weight;
+  color: $color;
+}
+
+//Responsive
+
+@mixin responsive($size) {
+  @if $size==mobile {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet_2 {
+    @media (max-width: 530px) {
+      @content;
+    }
+  }
+
+  @else if $size==tablet_1 {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop_1 {
+    @media (max-width: 1100px) {
+      @content;
+    }
+  }
+}
